@@ -1,0 +1,24 @@
+.search {
+    width: 250px;
+    background-color: #2d3139;
+    padding: 5px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.search-input {
+    height: 30px;
+    color: white;
+    background-color: #2d3139;
+    border-style: hidden;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}

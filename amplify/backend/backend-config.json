@@ -1,0 +1,66 @@
+{
+  "api": {
+    "api630c679d": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "expensetracker33ee5550"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "expensetracker33ee5550": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_expensetracker33ee5550_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expensetracker33ee5550"
+        }
+      ]
+    },
+    "AMPLIFY_function_expensetracker33ee5550_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expensetracker33ee5550"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    }
+  }
+}
